@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/*init*/
+*{margin:0; padding:0;}
+ul,ol{list-style: none;}
+html,body{height:100%;}
+
+/*accessibily version_0.0.1*/
+.skip_index{
+    font-size:12px;
+    position:absolute;
+    height:30px;
+    line-height: 30px;
+    left:0;
+    width:100%;
+    background: #000;
+    text-align: center;
+    top:-30px;
+}
+
+.skip_index a{color:#FFF}
+.skip_index a:first-child + a{display: none;}
+
+/*layout*/
+.wrapper{
+    width:1000px;
+    height:auto;
+    outline:1px #F00 solid;
+    margin:0 auto
+}
+
+.wrapper .top,
+.wrapper .content{
+    border:1px #F00 solid
+}
+
+
+.wrapper .top{height:150px;}
+.wrapper .content{min-height:500px; margin-top:10px;}
